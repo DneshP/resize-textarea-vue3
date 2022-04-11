@@ -83,10 +83,10 @@ export default {
   computed: {
     styles() {
       return {
-        resize: this.autoResize ? "none" : "",
+        resize: this.autoResize ? "none !important" : "",
         padding: `5${this.unit}`,
         height: this.height,
-        overflow: `${this.isScrollEnabled ? "scroll" : "invisible"}`,
+        overflow: `${this.isScrollEnabled ? "scroll" : "hidden"} !important`,
       };
     },
     unit() {
