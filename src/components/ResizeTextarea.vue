@@ -125,7 +125,9 @@ export default {
     },
   },
   created() {
-    this.textareaContent = this.modelValue;
+    nextTick(() => {
+      this.textareaContent = this.modelValue;
+     })
   },
   mounted() {
     this.resize();
