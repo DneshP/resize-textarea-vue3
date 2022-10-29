@@ -8,7 +8,7 @@ Inspired from vue-textarea-autosize (Works with Vue2)
 
 **Install the package using npm**
 
-`npm install resize-textarea`
+`npm i resize-textarea-vue3`
 
 ## Documentation
 
