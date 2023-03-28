@@ -104,6 +104,13 @@ export default {
       this.$emit("update:modelValue", this.textareaContent);
       this.resize();
     },
+    modelValue() {
+      /**
+       * update local textareaContent after parent modelValue changed
+       */
+      this.textareaContent = this.modelValue;
+      this.resize();
+    }
   },
   methods: {
     resize() {
